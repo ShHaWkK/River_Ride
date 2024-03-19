@@ -1,0 +1,80 @@
+/* Styles communs */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9f7ee;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #006400;
+    border-color: #006400;
+}
+
+/* Styles spécifiques à select_date.php */
+.registration-form h2 {
+    color: #006400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Styles spécifiques à select_arret.php */
+.select-arret-form h2 {
+    color: #006400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.select-arret-form .form-group label {
+    color: #006400;
+}
+
+/* Styles spécifiques à select_logement.php */
+.logement-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    padding: 15px;
+}
+
+.logement-info:hover {
+    background-color: #d9f2d9;
+}
+
+.logement-info.selected {
+    border-color: #006400;
+    background-color: #d9f2d9;
+}
+
+.logement-img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.registration-form .button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #006400;
+    text-decoration: none;
+}
+
+/* Ajoutez d'autres styles selon vos besoins */
