@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erreur 404</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="kayak"></div>
+        <h1>Oops! Erreur 404</h1>
+        <p>La page que vous cherchez semble avoir été emportée par la rivière...</p>
+        <a href="index.php">Revenir à l'accueil</a>
+    </div>
+</body>
+</html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(45deg, #D5F5E3, #AED6F1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(235, 245, 251, 0.9); /* légèrement transparent pour un effet flottant */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 80%; /* Assurez-vous que le container n'est pas trop grand */
+}
+
+.kayak {
+  background-image: url('images/kayaking-animation.gif');
+  background-size: cover;
+  width: 552px;
+  height: 321px;
+  margin: 0 auto;
+  animation: float 5s infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    margin-top: 30px;
+    color: #2E86C1;
+    font-weight: 700;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    color: #7FB3D5;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 25px;
+    color: white;
+    background-color: #3498DB;
+    border-radius: 50px; /* Un bouton arrondi */
+    font-weight: 500;
+    transition: background-color 0.3s; /* Animation douce lors de l'interaction */
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+    background-color: #2E86C1;
+}
+/*        Média Queries     */
+
+/* tablettes en mode portrait */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+
+    .kayak {
+        width: 500px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    a {
+        padding: 12px 20px;
+        font-size: 0.9em;
+    }
+}
+
+/* Pour les tablettes en mode paysage */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .container {
+        padding: 35px;
+    }
+
+    .kayak {
+        width: 512px;
+        height: 187px;
+    }
+    
+
+    h1 {
+        font-size: 1.9em;
+    }
+
+    p {
+        font-size: 1.15em;
+    }
+
+    a {
+        padding: 14px 22px;
+        font-size: 0.95em;
+    }
+
+}
+  
+
+
+</style>

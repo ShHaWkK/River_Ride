@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erreur 500</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: linear-gradient(45deg, #D5F5E3, #AED6F1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            background-color: rgba(235, 245, 251, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 80%;
+        }
+
+        .kayak-stuck {
+            background-image: url('images/icone.png');
+            background-size: cover;
+            width: 290px;
+            height: 279px;
+            margin: 0 auto;
+            animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+        }
+
+        @keyframes shake {
+            10%,
+            90% {
+                transform: translate3d(-1px, 0, 0);
+            }
+
+            20%,
+            80% {
+                transform: translate3d(2px, 0, 0);
+            }
+
+            30%,
+            50%,
+            70% {
+                transform: translate3d(-4px, 0, 0);
+            }
+
+            40%,
+            60% {
+                transform: translate3d(4px, 0, 0);
+            }
+        }
+
+        h1 {
+            margin-top: 30px;
+            color: #E74C3C;
+            font-weight: 700;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            color: #EC7063;
+            font-weight: 300;
+            font-size: 1.2em;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 25px;
+            color: white;
+            background-color: #E74C3C;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        a:hover {
+            background-color: #CB4335;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            .kayak-stuck {
+                width: 203px;
+                height: 200px;
+            }
+
+            h1 {
+                font-size: 1.7em;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+
+            a {
+                padding: 12px 20px;
+                font-size: 0.9em;
+            }
+        }
+
+        @media only screen and (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                padding: 35px;
+            }
+
+            .kayak-stuck {
+                width: 206px;
+                height: 187px;
+            }
+
+            h1 {
+                font-size: 1.9em;
+            }
+
+            p {
+                font-size: 1.15em;
+            }
+
+            a {
+                padding: 14px 22px;
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="kayak-stuck"></div>
+        <h1>Oh non! Erreur 500</h1>
+        <p>Il semble que nous soyons coincés entre les rochers. Nos équipes travaillent à résoudre le problème.</p>
+        <a href="index.php">Revenir à l'accueil</a>
+    </div>
+</body>
+
+</html>
