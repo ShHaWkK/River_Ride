@@ -1,0 +1,114 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #313131;
+    background-image: linear-gradient(120deg, #f0f0f0 0%, #ffffff 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.login-form {
+    position: relative;
+    width: 350px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    padding: 40px 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    animation: appear 500ms ease-in-out forwards;
+}
+
+@keyframes appear {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0px); opacity: 1; }
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-field i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9b9b9b;
+    transition: 0.3s all;
+}
+
+.input-field input {
+    width: 75%;
+    padding: 10px 15px 10px 40px;
+    border: none;
+    background-color: #eeeeee;
+    border-radius: 3px;
+    transition: 0.3s all;
+}
+
+.input-field input:focus {
+    outline: none;
+    background-color: #e0e0e0;
+    box-shadow: inset 0 0 0 2px #4CAF50;
+}
+
+.input-field input:focus + i {
+    color: #4CAF50;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 3px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    transition: 0.2s all;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgba(255,255,255,0.5);
+    width: 60px;
+    height: 100%;
+    left: -30px;
+    top: 0;
+    transform: skewX(45deg) translateX(-60px);
+    transition: 0.7s all;
+}
+
+button:hover:before {
+    transform: skewX(45deg) translateX(300px);
+}
+
+.extra a {
+    text-decoration: none;
+    color: #4CAF50;
+    transition: 0.3s all;
+}
+
+.extra a:hover {
+    text-decoration: underline;
+}
