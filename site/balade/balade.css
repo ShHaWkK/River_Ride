@@ -1,0 +1,67 @@
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .sidebarPage .packagesList {
+    min-height: 234px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+  }
+  
+  .thumbnail.deals {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .media:first-child {
+    margin-top: 0;
+  }
+  
+  .thumbnail {
+    border: none;
+    padding: 0;
+  }
+  
+  .bodyLeft {
+    margin-top: 20px;
+  }
+  
+  .bodyLeft h4 {
+    margin-bottom: 10px;
+  }
+  
+  .countryRating span {
+    font-weight: bold;
+  }
+  
+  .countryRating ul {
+    list-style: none;
+  }
+  
+  .textInfo {
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  .bodyRight {
+    margin-top: 20px;
+  }
+  
+  .bookingDetails p {
+    margin-bottom: 5px;
+  }
+  
+  .bookingDetails h2 {
+    margin-bottom: 5px;
+  }
+  
+  .bookingDetails a {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
